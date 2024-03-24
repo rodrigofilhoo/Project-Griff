@@ -5,13 +5,26 @@ class GngrStartPage extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const Scaffold(
+    return Scaffold(
       backgroundColor: Colors.white,
       body: SafeArea(
         child: SingleChildScrollView(
           child: Center(
             child: Column(
-              children: [Text('Hello World')],
+              children: [
+                Image.asset(
+                  'assets/images/griff.png',
+                  height: 170,
+                  width: 235,
+                ),
+                const SizedBox(
+                  height: 90,
+                ),
+                const Text(
+                  'É bom ter você por aqui...',
+                  style: TextStyle(),
+                )
+              ],
             ),
           ),
         ),
