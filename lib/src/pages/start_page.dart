@@ -12,18 +12,33 @@ class GngrStartPage extends StatelessWidget {
           child: Center(
             child: Column(
               children: [
+                const SizedBox(
+                  height: 15,
+                ),
                 Image.asset(
                   'assets/images/griff.png',
-                  height: 170,
-                  width: 235,
+                  height: 200,
+                  width: 250,
                 ),
                 const SizedBox(
-                  height: 90,
+                  height: 70,
                 ),
-                const Text(
-                  'É bom ter você por aqui...',
-                  style: TextStyle(),
-                )
+                const Row(
+                  children: [
+                    SizedBox(
+                      width: 30,
+                    ),
+                    Text(
+                      'É bom ter você por aqui...\npreparado para a nova\nfaze da sua vida?',
+                      style: TextStyle(
+                        fontFamily: 'Kanit',
+                        fontWeight: FontWeight.w500,
+                        fontSize: 24,
+                        letterSpacing: -0.5,
+                      ),
+                    ),
+                  ],
+                ),
               ],
             ),
           ),

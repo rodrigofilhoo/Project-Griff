@@ -77,13 +77,24 @@ flutter:
   fonts:
     - family: Khula
       fonts:
-        - asset: assets/fonts/Khula-Light.ttf
+        - asset: assets/font/Khula/Khula-Light.ttf
           weight: 300
-        - asset: assets/fonts/Khula-Regular.ttf
+        - asset: assets/font/Khula/Khula-Regular.ttf
           weight: 400
-        - asset: assets/fonts/Khula-SemiBold.ttf
+        - asset: assets/font/Khula/Khula-SemiBold.ttf
           weight: 500
-        - asset: assets/fonts/Khula-Bold.ttf
+        - asset: assets/font/Khula/Khula-Bold.ttf
+          weight: 600
+
+    - family: Kanit
+      fonts:
+        - asset: assets/font/Kanit/Kanit-Light.ttf
+          weight: 300
+        - asset: assets/font/Kanit/Kanit-Regular.ttf
+          weight: 400
+        - asset: assets/font/Kanit/Kanit-SemiBold.ttf
+          weight: 500
+        - asset: assets/font/Kanit/Kanit-Bold.ttf
           weight: 600
   #
   # For details regarding fonts from package dependencies,
