@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:project_griff/src/features/buttons/gengar_button.dart';
 
 class GngrStartPage extends StatelessWidget {
   const GngrStartPage({super.key, required String title});
@@ -33,14 +34,14 @@ class GngrStartPage extends StatelessWidget {
                       style: TextStyle(
                         fontFamily: 'Kanit',
                         fontWeight: FontWeight.w500,
-                        fontSize: 24,
+                        fontSize: 28,
                         letterSpacing: -0.5,
                       ),
                     ),
                   ],
                 ),
                 const SizedBox(
-                  height: 90,
+                  height: 170,
                 ),
                 const Row(
                   children: [
@@ -52,11 +53,23 @@ class GngrStartPage extends StatelessWidget {
                       style: TextStyle(
                         fontFamily: 'Khanit',
                         fontWeight: FontWeight.bold,
-                        fontSize: 24,
+                        fontSize: 28,
                         letterSpacing: -0.5,
                       ),
                     ),
                   ],
+                ),
+                const SizedBox(
+                  height: 22,
+                ),
+                GengarButton(
+                  onTap: () {},
+                  color: Colors.black,
+                ),
+                const SizedBox(height: 10),
+                GengarButton(
+                  onTap: () {},
+                  color: Colors.black,
                 ),
               ],
             ),

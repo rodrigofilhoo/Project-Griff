@@ -15,12 +15,24 @@ class GengarButton extends StatelessWidget {
     return Material(
       color: Colors.transparent,
       child: Ink(
+        width: 350,
+        height: 45,
         child: InkWell(
           onTap: onTap,
           child: Container(
             decoration: BoxDecoration(
               color: color,
               borderRadius: BorderRadius.circular(50),
+            ),
+            child: const Center(
+              child: Text(
+                'Criar conta',
+                style: TextStyle(
+                  color: Colors.white,
+                  fontSize: 16,
+                  fontWeight: FontWeight.bold,
+                ),
+              ),
             ),
           ),
         ),
