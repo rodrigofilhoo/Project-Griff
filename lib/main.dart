@@ -13,7 +13,7 @@ class MyApp extends StatelessWidget {
     return const MaterialApp(
       title: 'Project Griff',
       debugShowCheckedModeBanner: false,
-      home: GngrStartPage(
+      home: StartPage(
         title: 'Project Griff',
       ),
     );

@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:project_griff/src/features/buttons/gengar_button.dart';
 
-class GngrStartPage extends StatelessWidget {
-  const GngrStartPage({super.key, required String title});
+class StartPage extends StatelessWidget {
+  const StartPage({super.key, required String title});
 
   @override
   Widget build(BuildContext context) {
