@@ -39,6 +39,25 @@ class GngrStartPage extends StatelessWidget {
                     ),
                   ],
                 ),
+                const SizedBox(
+                  height: 90,
+                ),
+                const Row(
+                  children: [
+                    SizedBox(
+                      width: 30,
+                    ),
+                    Text(
+                      'Já tem uma conta\ncom a gente?',
+                      style: TextStyle(
+                        fontFamily: 'Khanit',
+                        fontWeight: FontWeight.bold,
+                        fontSize: 24,
+                        letterSpacing: -0.5,
+                      ),
+                    ),
+                  ],
+                ),
               ],
             ),
           ),
