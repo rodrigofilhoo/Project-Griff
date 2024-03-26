@@ -1,8 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:project_griff/src/features/buttons/gengar_button.dart';
+import 'package:project_griff/src/pages/auth/login_page.dart';
 
-class StartPage extends StatelessWidget {
-  const StartPage({super.key, required String title});
+class GengarStartPage extends StatelessWidget {
+  const GengarStartPage({super.key, required String title});
 
   @override
   Widget build(BuildContext context) {
@@ -63,7 +64,12 @@ class StartPage extends StatelessWidget {
                   height: 22,
                 ),
                 GengarButton(
-                  onTap: () {},
+                  onTap: () {
+                    Navigator.push(
+                        context,
+                        MaterialPageRoute(
+                            builder: (context) => const GengarLoginPage()));
+                  },
                   color: Colors.black,
                 ),
                 const SizedBox(height: 10),
