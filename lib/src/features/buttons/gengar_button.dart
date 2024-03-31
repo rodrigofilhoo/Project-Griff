@@ -2,12 +2,14 @@ import 'package:flutter/material.dart';
 
 class GengarButton extends StatelessWidget {
   final Function()? onTap;
+  // final Text text;
   final color;
 
   const GengarButton({
     super.key,
     required this.onTap,
     required this.color,
+    // required this.text,
   });
 
   @override
@@ -31,6 +33,7 @@ class GengarButton extends StatelessWidget {
                   color: Colors.white,
                   fontSize: 16,
                   fontWeight: FontWeight.bold,
+                  fontFamily: 'Kanit',
                 ),
               ),
             ),

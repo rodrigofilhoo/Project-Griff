@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:project_griff/src/features/buttons/gengar_button.dart';
 import 'package:project_griff/src/pages/auth/login_page.dart';
+import 'package:project_griff/src/pages/auth/register_page.dart';
 
 class GengarStartPage extends StatelessWidget {
   const GengarStartPage({super.key, required String title});
@@ -19,11 +20,11 @@ class GengarStartPage extends StatelessWidget {
                 ),
                 Image.asset(
                   'assets/images/griff.png',
-                  height: 200,
-                  width: 250,
+                  height: 250,
+                  width: 300,
                 ),
                 const SizedBox(
-                  height: 70,
+                  height: 50,
                 ),
                 const Row(
                   children: [
@@ -42,7 +43,7 @@ class GengarStartPage extends StatelessWidget {
                   ],
                 ),
                 const SizedBox(
-                  height: 170,
+                  height: 150,
                 ),
                 const Row(
                   children: [
@@ -66,15 +67,24 @@ class GengarStartPage extends StatelessWidget {
                 GengarButton(
                   onTap: () {
                     Navigator.push(
-                        context,
-                        MaterialPageRoute(
-                            builder: (context) => const GengarLoginPage()));
+                      context,
+                      MaterialPageRoute(
+                        builder: (context) => const GengarRegisterPage(),
+                      ),
+                    );
                   },
                   color: Colors.black,
                 ),
                 const SizedBox(height: 10),
                 GengarButton(
-                  onTap: () {},
+                  onTap: () {
+                    Navigator.push(
+                      context,
+                      MaterialPageRoute(
+                        builder: (context) => const GengarLoginPage(),
+                      ),
+                    );
+                  },
                   color: Colors.black,
                 ),
               ],

@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:project_griff/src/pages/start_page.dart';
 
-class GengarLoginPage extends StatelessWidget {
-  const GengarLoginPage({super.key});
+class GengarRegisterPage extends StatelessWidget {
+  const GengarRegisterPage({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -11,8 +11,8 @@ class GengarLoginPage extends StatelessWidget {
         child: SafeArea(
           child: Column(
             children: [
-              GestureDetector(
-                onTap: () {
+              ElevatedButton(
+                onPressed: () {
                   Navigator.push(
                     context,
                     MaterialPageRoute(
