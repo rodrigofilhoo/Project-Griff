@@ -73,7 +73,9 @@ class GengarStartPage extends StatelessWidget {
                       ),
                     );
                   },
-                  color: Colors.black,
+                  label: 'Criar conta',
+                  colorButton: Colors.black,
+                  colorLabel: Colors.white,
                 ),
                 const SizedBox(height: 10),
                 GengarButton(
@@ -85,7 +87,9 @@ class GengarStartPage extends StatelessWidget {
                       ),
                     );
                   },
-                  color: Colors.black,
+                  label: 'Entrar',
+                  colorButton: Colors.white,
+                  colorLabel: Colors.black,
                 ),
               ],
             ),

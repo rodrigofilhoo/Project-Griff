@@ -1,12 +1,11 @@
 import 'package:flutter/material.dart';
-import 'package:flutter/services.dart';
 import 'package:project_griff/src/features/buttons/gengar_button.dart';
-import 'package:project_griff/src/features/buttons/txt_field/gengar_txtForm.dart';
+import 'package:project_griff/src/features/fields/gengar_txtForm.dart';
 import 'package:project_griff/src/pages/start_page.dart';
 
 class GengarRegisterPage extends StatelessWidget {
   final TextEditingController emailController = TextEditingController();
-  final TextEditingController telefoneController = TextEditingController();
+  final TextEditingController phoneController = TextEditingController();
   final TextEditingController passwsController = TextEditingController();
   final TextEditingController confirmPsswdController = TextEditingController();
   GengarRegisterPage({super.key});
@@ -52,7 +51,7 @@ class GengarRegisterPage extends StatelessWidget {
                 ),
                 GengarTextForm(
                   hintText: "Telefone",
-                  controller: telefoneController,
+                  controller: phoneController,
                   osbcureText: false,
                   prefixIcon: const Icon(Icons.phone),
                   keyboardType: TextInputType.number,
@@ -82,7 +81,9 @@ class GengarRegisterPage extends StatelessWidget {
                 ),
                 GengarButton(
                   onTap: () {},
-                  color: Colors.black,
+                  label: 'Criar conta',
+                  colorButton: Colors.black,
+                  colorLabel: Colors.white,
                 ),
                 const SizedBox(
                   height: 20,
@@ -98,7 +99,7 @@ class GengarRegisterPage extends StatelessWidget {
                       ),
                     );
                   },
-                  child: new Text("Voltar"),
+                  child: const Text("Voltar"),
                 ),
               ],
             ),

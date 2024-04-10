@@ -2,13 +2,16 @@ import 'package:flutter/material.dart';
 
 class GengarButton extends StatelessWidget {
   final Function()? onTap;
-  // final Text text;
-  final color;
+  final String label;
+  final Color? colorButton;
+  final Color? colorLabel;
 
   const GengarButton({
     super.key,
     required this.onTap,
-    required this.color,
+    required this.label,
+    required this.colorButton,
+    required this.colorLabel,
     // required this.text,
   });
 
@@ -23,7 +26,7 @@ class GengarButton extends StatelessWidget {
           onTap: onTap,
           child: Container(
             decoration: BoxDecoration(
-              color: color,
+              color: colorButton,
               borderRadius: BorderRadius.circular(50),
             ),
             child: const Center(
