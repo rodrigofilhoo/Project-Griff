@@ -64,32 +64,11 @@ class GengarStartPage extends StatelessWidget {
                 const SizedBox(
                   height: 22,
                 ),
-                GengarButton(
-                  onTap: () {
-                    Navigator.push(
-                      context,
-                      MaterialPageRoute(
-                        builder: (context) => GengarRegisterPage(),
-                      ),
-                    );
-                  },
-                  label: 'Criar conta',
-                  colorButton: Colors.black,
-                  colorLabel: Colors.white,
+                const GengarButton(
+                  label: 'Cadastrar',
                 ),
-                const SizedBox(height: 10),
-                GengarButton(
-                  onTap: () {
-                    Navigator.push(
-                      context,
-                      MaterialPageRoute(
-                        builder: (context) => const GengarLoginPage(),
-                      ),
-                    );
-                  },
+                const GengarButton(
                   label: 'Entrar',
-                  colorButton: Colors.white,
-                  colorLabel: Colors.black,
                 ),
               ],
             ),
@@ -99,3 +78,12 @@ class GengarStartPage extends StatelessWidget {
     );
   }
 }
+
+// onTap: () {
+//                     Navigator.push(
+//                       context,
+//                       MaterialPageRoute(
+//                         builder: (context) => const GengarLoginPage(),
+//                       ),
+//                     );
+//                   },

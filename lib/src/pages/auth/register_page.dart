@@ -79,16 +79,14 @@ class GengarRegisterPage extends StatelessWidget {
                 const SizedBox(
                   height: 20,
                 ),
-                GengarButton(
-                  onTap: () {},
+                const GengarButton(
                   label: 'Criar conta',
-                  colorButton: Colors.black,
-                  colorLabel: Colors.white,
                 ),
                 const SizedBox(
                   height: 20,
                 ),
                 GestureDetector(
+                  child: const Text("Voltar"),
                   onTap: () {
                     Navigator.push(
                       context,
@@ -99,7 +97,6 @@ class GengarRegisterPage extends StatelessWidget {
                       ),
                     );
                   },
-                  child: const Text("Voltar"),
                 ),
               ],
             ),
