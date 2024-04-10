@@ -69,7 +69,7 @@ class GengarStartPage extends StatelessWidget {
                     Navigator.push(
                       context,
                       MaterialPageRoute(
-                        builder: (context) => const GengarRegisterPage(),
+                        builder: (context) => GengarRegisterPage(),
                       ),
                     );
                   },
