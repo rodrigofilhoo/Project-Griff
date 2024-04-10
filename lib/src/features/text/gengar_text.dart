@@ -35,6 +35,7 @@ class GengarText extends StatelessWidget {
       maxLines: maxLines,
       overflow: overflow,
       style: Theme.of(context).textTheme.bodySmall!.copyWith(
+            color: color,
             fontSize: typography.size,
             fontWeight: typography.isBold ? FontWeight.bold : FontWeight.normal,
           ),

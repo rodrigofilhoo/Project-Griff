@@ -3,9 +3,10 @@ import 'package:project_griff/src/features/text/gengar_text.dart';
 
 class GengarButton extends StatelessWidget {
   final String label;
-  final void Function()? onTap;
-  final Color? corButton;
-  final Color? corTexto;
+  final void Function()? onPressed;
+  final Color? colorButton;
+  final Color? colorText;
+  final Color? colorBorder;
   final EdgeInsetsGeometry padding;
   final double? elevation;
   final EdgeInsets? margin;
@@ -14,9 +15,10 @@ class GengarButton extends StatelessWidget {
   const GengarButton({
     super.key,
     required this.label,
-    this.onTap,
-    this.corButton,
-    this.corTexto,
+    this.onPressed,
+    this.colorButton,
+    this.colorText,
+    this.colorBorder,
     this.padding = const EdgeInsets.symmetric(vertical: 16, horizontal: 16),
     this.elevation,
     this.margin,
@@ -27,20 +29,29 @@ class GengarButton extends StatelessWidget {
   Widget build(BuildContext context) {
     return Padding(
       padding: margin ?? EdgeInsets.zero,
-      child: TextButton(
-        onPressed: onTap,
-        style: TextButton.styleFrom(
-          elevation: elevation,
-          backgroundColor: corButton,
-          shape: RoundedRectangleBorder(
-            borderRadius: BorderRadius.circular(50),
+      child: Container(
+        decoration: BoxDecoration(
+          color: colorBorder,
+          border: Border.all(
+            width: 2,
           ),
-          padding: padding,
+          borderRadius: BorderRadius.circular(50),
         ),
-        child: GengarText(
-          text: label,
-          typography: GengarTypography.button,
-          color: corTexto,
+        child: TextButton(
+          onPressed: onPressed,
+          style: TextButton.styleFrom(
+            elevation: elevation,
+            backgroundColor: colorButton,
+            shape: RoundedRectangleBorder(
+              borderRadius: BorderRadius.circular(50),
+            ),
+            padding: padding,
+          ),
+          child: GengarText(
+            text: label,
+            typography: GengarTypography.button,
+            color: colorText,
+          ),
         ),
       ),
     );

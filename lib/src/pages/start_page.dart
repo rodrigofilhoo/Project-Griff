@@ -66,10 +66,22 @@ class GengarStartPage extends StatelessWidget {
                 ),
                 const GengarButton(
                   label: 'Cadastrar',
-                  margin: EdgeInsets.symmetric(horizontal: 2),
+                  padding: EdgeInsets.symmetric(horizontal: 80),
+                  colorButton: Colors.black,
+                  colorBorder: Colors.black,
+                  colorText: Colors.white,
+                  onPressed: null,
+                ),
+                const SizedBox(
+                  height: 10,
                 ),
                 const GengarButton(
                   label: 'Entrar',
+                  padding: EdgeInsets.symmetric(horizontal: 95),
+                  colorButton: Colors.white,
+                  colorBorder: Colors.black,
+                  colorText: Colors.black,
+                  onPressed: null,
                 ),
               ],
             ),
@@ -79,12 +91,3 @@ class GengarStartPage extends StatelessWidget {
     );
   }
 }
-
-// onTap: () {
-//                     Navigator.push(
-//                       context,
-//                       MaterialPageRoute(
-//                         builder: (context) => const GengarLoginPage(),
-//                       ),
-//                     );
-//                   },
