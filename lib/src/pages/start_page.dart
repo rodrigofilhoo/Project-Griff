@@ -66,6 +66,7 @@ class GengarStartPage extends StatelessWidget {
                 ),
                 const GengarButton(
                   label: 'Cadastrar',
+                  margin: EdgeInsets.symmetric(horizontal: 2),
                 ),
                 const GengarButton(
                   label: 'Entrar',

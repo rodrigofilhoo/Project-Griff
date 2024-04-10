@@ -92,7 +92,7 @@ class GengarRegisterPage extends StatelessWidget {
                       context,
                       MaterialPageRoute(
                         builder: (context) => const GengarStartPage(
-                          title: 'Start Paqe',
+                          title: 'Start Page',
                         ),
                       ),
                     );
