@@ -64,24 +64,38 @@ class GengarStartPage extends StatelessWidget {
                 const SizedBox(
                   height: 22,
                 ),
-                const GengarButton(
+                GengarButton(
                   label: 'Cadastrar',
-                  padding: EdgeInsets.symmetric(horizontal: 140),
+                  padding: const EdgeInsets.symmetric(horizontal: 140),
                   colorButton: Colors.black,
                   colorBorder: Colors.black,
                   colorText: Colors.white,
-                  onPressed: null,
+                  onPressed: () {
+                    Navigator.push(
+                      context,
+                      MaterialPageRoute(
+                        builder: (context) => const GengarLoginPage(),
+                      ),
+                    );
+                  },
                 ),
                 const SizedBox(
                   height: 10,
                 ),
-                const GengarButton(
+                GengarButton(
                   label: 'Entrar',
-                  padding: EdgeInsets.symmetric(horizontal: 155),
+                  padding: const EdgeInsets.symmetric(horizontal: 155),
                   colorButton: Colors.white,
                   colorBorder: Colors.black,
                   colorText: Colors.black,
-                  onPressed: null,
+                  onPressed: () {
+                    Navigator.push(
+                      context,
+                      MaterialPageRoute(
+                        builder: (context) => const GengarLoginPage(),
+                      ),
+                    );
+                  },
                 ),
               ],
             ),
