@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:project_griff/src/features/buttons/gengar_button.dart';
 import 'package:project_griff/src/features/fields/gengar_txtForm.dart';
+import 'package:project_griff/src/pages/auth/forgot_password_page.dart';
 import 'package:project_griff/src/pages/start_page.dart';
 
 class GengarLoginPage extends StatelessWidget {
@@ -64,9 +65,8 @@ class GengarLoginPage extends StatelessWidget {
                         Navigator.push(
                           context,
                           MaterialPageRoute(
-                            builder: (context) => const GengarStartPage(
-                              title: 'forgotPassword',
-                            ),
+                            builder: (context) =>
+                                const GengarForgotPasswordPage(),
                           ),
                         );
                       },
