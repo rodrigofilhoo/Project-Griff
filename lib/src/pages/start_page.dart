@@ -66,7 +66,7 @@ class GengarStartPage extends StatelessWidget {
                 ),
                 const GengarButton(
                   label: 'Cadastrar',
-                  padding: EdgeInsets.symmetric(horizontal: 80),
+                  padding: EdgeInsets.symmetric(horizontal: 140),
                   colorButton: Colors.black,
                   colorBorder: Colors.black,
                   colorText: Colors.white,
@@ -77,7 +77,7 @@ class GengarStartPage extends StatelessWidget {
                 ),
                 const GengarButton(
                   label: 'Entrar',
-                  padding: EdgeInsets.symmetric(horizontal: 95),
+                  padding: EdgeInsets.symmetric(horizontal: 155),
                   colorButton: Colors.white,
                   colorBorder: Colors.black,
                   colorText: Colors.black,
