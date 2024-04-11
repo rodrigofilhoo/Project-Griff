@@ -19,7 +19,7 @@ class GengarButton extends StatelessWidget {
     this.colorButton,
     this.colorText,
     this.colorBorder,
-    this.padding = const EdgeInsets.symmetric(vertical: 16, horizontal: 16),
+    this.padding = const EdgeInsets.symmetric(vertical: 15, horizontal: 16),
     this.elevation,
     this.margin,
     this.icon,

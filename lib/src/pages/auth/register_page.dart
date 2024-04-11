@@ -81,6 +81,10 @@ class GengarRegisterPage extends StatelessWidget {
                 ),
                 const GengarButton(
                   label: 'Criar conta',
+                  padding: const EdgeInsets.symmetric(horizontal: 140),
+                  colorButton: Colors.black,
+                  colorBorder: Colors.black,
+                  colorText: Colors.white,
                 ),
                 const SizedBox(
                   height: 20,

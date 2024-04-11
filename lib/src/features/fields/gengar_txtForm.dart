@@ -19,7 +19,7 @@ class GengarTextForm extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      padding: const EdgeInsets.symmetric(horizontal: 32),
+      padding: const EdgeInsets.symmetric(horizontal: 20),
       height: 55,
       child: TextFormField(
           controller: controller,

@@ -74,7 +74,7 @@ class GengarStartPage extends StatelessWidget {
                     Navigator.push(
                       context,
                       MaterialPageRoute(
-                        builder: (context) => const GengarLoginPage(),
+                        builder: (context) => GengarRegisterPage(),
                       ),
                     );
                   },
@@ -92,7 +92,7 @@ class GengarStartPage extends StatelessWidget {
                     Navigator.push(
                       context,
                       MaterialPageRoute(
-                        builder: (context) => const GengarLoginPage(),
+                        builder: (context) => GengarLoginPage(),
                       ),
                     );
                   },
