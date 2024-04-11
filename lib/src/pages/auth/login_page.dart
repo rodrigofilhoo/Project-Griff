@@ -55,25 +55,31 @@ class GengarLoginPage extends StatelessWidget {
                   keyboardType: TextInputType.visiblePassword,
                 ),
                 Row(
-                  mainAxisAlignment: MainAxisAlignment.end,
+                  mainAxisAlignment: MainAxisAlignment.start,
                   children: [
+                    const Padding(
+                        padding: EdgeInsets.symmetric(horizontal: 126)),
                     GestureDetector(
                       onTap: () {
                         Navigator.push(
                           context,
                           MaterialPageRoute(
                             builder: (context) => const GengarStartPage(
-                              title: 'Forgot Passowd',
+                              title: 'forgotPassword',
                             ),
                           ),
                         );
                       },
                       child: const Text(
                         'Esqueceu a senha?',
+                        style: TextStyle(
+                          decoration: TextDecoration.underline,
+                        ),
                       ),
                     ),
                   ],
                 ),
+                const SizedBox(height: 40),
                 const GengarButton(
                   label: 'Criar conta',
                   padding: EdgeInsets.symmetric(horizontal: 140),
@@ -81,6 +87,7 @@ class GengarLoginPage extends StatelessWidget {
                   colorBorder: Colors.black,
                   colorText: Colors.white,
                 ),
+                const SizedBox(height: 10),
                 GestureDetector(
                   onTap: () {
                     Navigator.push(

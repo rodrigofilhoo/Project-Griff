@@ -4,7 +4,7 @@ class GengarTextForm extends StatelessWidget {
   final String hintText;
   final TextEditingController controller;
   final bool osbcureText;
-  final prefixIcon;
+  final Icon? prefixIcon;
   final keyboardType;
 
   const GengarTextForm({
@@ -20,7 +20,7 @@ class GengarTextForm extends StatelessWidget {
   Widget build(BuildContext context) {
     return Container(
       padding: const EdgeInsets.symmetric(horizontal: 20),
-      height: 55,
+      height: 50,
       child: TextFormField(
           controller: controller,
           keyboardType: keyboardType,
